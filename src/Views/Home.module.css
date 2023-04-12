@@ -1,0 +1,160 @@
+.home {
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+  width: 100%;
+  background-color: #ededed;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 100px;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.menu li {
+  list-style: none;
+  font-weight: 600;
+  font-size: 1.25vw;
+  text-align: center;
+  margin: 15px 0;
+  padding: 6px 10px;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.menu li a {
+  all: unset;
+}
+
+.menu .color1:hover {
+  background-color: #ff9aa2;
+}
+
+.menu .color2:hover {
+  background-color: #ffdac1;
+}
+
+.menu .color3:hover {
+  background-color: #e2f0cb;
+}
+
+.menu .color4:hover {
+  background-color: #c7ceea;
+}
+
+.autor {
+  margin-top: 40px;
+  font-weight: 300;
+  text-align: center;
+  background-color: transparent;
+}
+
+.nombre {
+  color: #53bac1;
+  font-weight: 700;
+}
+
+.image img {
+  width: 350px;
+  border-radius: 50%;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  font-family: "Quicksand", sans-serif;
+  letter-spacing: 5px;
+}
+
+.info p {
+  width: 600px;
+  margin: auto;
+  color: #646464;
+  letter-spacing: 3px;
+}
+
+.redes {
+  display: flex;
+  margin-top: 20px;
+  text-align: center;
+  padding: 5px 30%;
+  justify-content: space-between;
+}
+
+.redes li {
+  list-style: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.redes li a {
+  padding: 15px;
+}
+
+.redes i {
+  font-size: 2.5rem;
+}
+
+.sections {
+  justify-content: center;
+  align-items: center;
+}
+
+.info h1 {
+  color: black;
+}
+
+@media only screen and (max-width: 750px) {
+  .home {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  .menu {
+    flex-direction: row;
+    margin: 0;
+    height: auto;
+  }
+  .menu li {
+    font-size: 3vw;
+  }
+  .autor, br{
+   display: none;
+  }
+  .home .sections{
+    justify-content: space-evenly;
+    text-align: center
+  }
+  .image img {
+    width: 95%;
+    height: auto;
+  }
+  .data{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 5vw;
+  }
+  .info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .info h1 {
+    font-size: 8vw;
+  }
+  .info p {
+    font-size: 3vw;
+    padding: 0 5vw;
+  }
+}

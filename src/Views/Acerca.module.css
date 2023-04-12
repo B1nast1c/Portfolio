@@ -1,0 +1,70 @@
+.image img {
+  border-radius: 50%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.name {
+  font-size: 3vw;
+  letter-spacing: 1vh;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.acerca {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: lighter;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 2vw;
+
+}
+
+.acerca > * { 
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills h3, .description h3{
+  justify-self: flex-start;
+  font-size: 2vw;
+  font-weight: lighter;
+}
+
+.center {
+  margin-top: 5vh;
+  font-weight: lighter;
+  flex: 1;
+}
+
+.list {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1vh;
+  font-size: 1vw;
+}
+
+.list i{
+  font-size: 5vw;
+  transition: all .2s ease-in-out;
+}
+
+.description p{
+  margin: 0 3.5vw;
+  font-size: 1.15vw;
+}
+
+.description p span{
+  font-weight: 400;
+}
